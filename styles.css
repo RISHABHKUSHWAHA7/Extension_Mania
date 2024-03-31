@@ -33,14 +33,25 @@ body {
 }
 
 #download {
-  background-image: url("/images/download.png");
+  background-image: url("/images/down.png");
+  background-size: contain; /* Adjust size to fit the element */
+  background-repeat: no-repeat; /* Ensure it's not repeated */
+  width: 40px; /* Set width and height explicitly */
+  height: 40px;
+  margin-bottom: 10px;
+  z-index: 1;
 }
 
+
 #download:active {
-  background-image: url("/images/downloadclick.png")
+
+}
+#download:hover {
+  cursor: pointer;
 }
 ::-webkit-scrollbar {
   width: 8px;
+  --scrollbar-color-track: blue;
 }
 
 ::-webkit-scrollbar-thumb {
